@@ -26,17 +26,21 @@
 
         <form method="get"
               action="#"
-              x-data="{validated : true, email : ''}"
+              x-data="{validated : true, email : '', message: ''}"
               @submit.prevent="
-              if (!/.+\@.+\..+/.test(email)){
+              if (email.length === 0){
                 validated = false
+                message = 'Whoops! It looks like you forgot to add your email'
+              }else if (!/.+\@.+\..+/.test(email)){
+                validated = false
+                message = 'Please provide a valid email address'
               }else{
                 validated = true
                 $el.submit()
               }">
             <div>
                 <input x-model="email" type="text" name="email" placeholder="Your email address..." :class="validated ? '' : 'border-red'" >
-                <span x-show="!validated">Please provide a valid email address</span>
+                <span x-text="message"></span>
             </div>
             <button>Notify Me</button>
         </form>
