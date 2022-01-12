@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 1.5rem;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 635px;
+  }
+}
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container header {
+    margin-top: 5.5rem;
+  }
+}
+.container header .logo {
+  margin-bottom: 2.5rem;
+  width: 54px;
+}
+@media (min-width: 768px) {
+  .container header .logo {
+    width: 86px;
+  }
+}
+.container header h1 {
+  font-weight: 200;
+  font-size: 23px;
+  margin-bottom: 1rem;
+  color: #969696;
+}
+@media (min-width: 768px) {
+  .container header h1 {
+    font-size: 48px;
+  }
+}
+.container header h1 span {
+  font-weight: 600;
+  color: #151f29;
+}
+.container header p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #151f29;
+}
+@media (min-width: 768px) {
+  .container header p {
+    font-size: 20px;
+  }
+}
+.container header form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .container header form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+}
+.container header form div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .container header form div {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+}
+.container header form div span {
+  color: #ff5263;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .container header form div span {
+    text-align: left;
+    margin-left: 2.25rem;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+}
+.container header form input {
+  border: 1px solid #c2d3ff;
+  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  margin-bottom: 0.2rem;
+}
+@media (min-width: 768px) {
+  .container header form input {
+    padding: 1rem 2rem;
+    flex-basis: 100%;
+    font-size: 16px;
+  }
+}
+.container header form input::-webkit-input-placeholder {
+  color: #c2d3ff;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .container header form input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+}
+.container header form button {
+  color: #fff;
+  background-color: #4f7df3;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 5px 10px 0 #c2d3ff;
+}
+@media (min-width: 768px) {
+  .container header form button {
+    padding: 1rem 3.5rem;
+    font-size: 16px;
+  }
+}
+.container header form button:hover {
+  background-color: rgba(79,125,243,0.75);
+  cursor: pointer;
+}
+.container main {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .container main {
+    margin-top: 3rem;
+  }
+}
+.container main img {
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .container main img {
+    width: 100%;
+  }
+}
+.container footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+}
+.container footer .socials {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+.container footer .socials > * + * {
+  margin-left: 0.75rem;
+}
+.container footer .socials .fab {
+  color: #4f7df3;
+  border-radius: 1rem;
+  border: 1px solid rgba(194,211,255,0.5);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.container footer .socials .fab:hover {
+  color: #fff;
+  background-color: #4f7df3;
+  cursor: pointer;
+}
+.container footer p {
+  font-size: 10px;
+  color: #969696;
+}
+@media (min-width: 768px) {
+  .container footer p {
+    font-size: 14px;
+    margin-bottom: 3rem;
+  }
+}
+.border-red {
+  border-color: #ff5263 !important;
+}
