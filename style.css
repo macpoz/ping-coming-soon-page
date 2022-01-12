@@ -202,6 +202,7 @@ body {
   height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .container footer .socials .fab:hover {
   color: #fff;
