@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://macpoz.github.io/ping-coming-soon-page/
+- [Solution](https://macpoz.github.io/ping-coming-soon-page/)
 
 ## My process
 
